@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Estudo de nodejs",
+  "main": "produtos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alberto19/NodeJS.git"
+  },
+  "author": "José Alberto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alberto19/NodeJS/issues"
+  },
+  "homepage": "https://github.com/Alberto19/NodeJS#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1"
+  }
+}
