@@ -1,18 +1,19 @@
 <html>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <td>Id</td>
-                <td>Nome</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>livro de node js</td>
-            </tr>
-        </tbody>
-    </table>
+    <form action="/produtos/salva" method="POST">
+        <div>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Coloque o Titulo" />
+        </div>
+        <div>
+            <label for="descricao">Descricao</label>
+            <textarea cols="10" rows="10" type="text" id="descricao" name="descricao" placeholder="Descrição"></textarea>
+        </div>
+        <div>
+            <label for="preco">Preco</label>
+            <input type="preco" id="preco" name="preco" placeholder="0.00">
+        </div>
+        <input type="submit" value="Gravar" />
+    </form>
 </body>
 </html>

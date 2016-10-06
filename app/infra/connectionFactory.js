@@ -10,6 +10,6 @@ function createDbConnection(){
 };
 //wrapper
 module.exports = function(){
-    return createDbConnection();
+    return createDbConnection;
 }
 
