@@ -21,6 +21,8 @@ ou
 **Modulo para teste de integração**
 - npm install mocha --save-dev
 - npm install supertest --save-dev
+**Modulo do Socket.io**
+- npm install socket.io --save
 ```
 
 ## teste
@@ -29,7 +31,7 @@ ou
 ```
 node_modules/mocha/bin/mocha
 ```
-**Teste em Dev***
+**Teste em Dev**
 ```
 NODE_ENV=test node_modules/mocha/bin/mocha
 ```
