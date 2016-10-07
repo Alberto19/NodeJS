@@ -19,7 +19,7 @@ var client = http.request(configuracoes,function(res){
 });
 
 var produto = {
-    titulo: '',
+    titulo: 'certo',
     descricao: 'nodeJS',
     preco: 100.00
 };
