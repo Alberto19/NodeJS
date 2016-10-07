@@ -8,6 +8,7 @@ module.exports = function(){
     app.set('views','./app/views');
 
     app.use(bodyparser.urlencoded({extended: true}));
+    app.use(bodyparser.json());
 
     load('routes', {cwd: 'app'})
         .then('infra')
