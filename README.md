@@ -20,13 +20,13 @@ ou
 ``` 
 - npm install express-validator --save
 ```
-```  
 **Modulo para teste de integração**
+```  
 - npm install mocha --save-dev
 - npm install supertest --save-dev
 ``` 
-``` 
 **Modulo do Socket.io**
+``` 
 - npm install socket.io --save
 ```
 
@@ -47,4 +47,3 @@ node_modules/mocha/bin/mocha
 ```
 NODE_ENV=test node_modules/mocha/bin/mocha
 ```
-
