@@ -14,9 +14,22 @@ module.exports = function(){
     app.use(bodyparser.json());
     app.use(expressValidator());
 
-
     load('routes', {cwd: 'app'})
         .then('infra')
         .into(app);
-    return app;
+ 
+
+    app.use(function(req,res,nex){
+        res.status(404).render('erros/404');
+        next();
+    });
+    app.use(function(err,req,res,next){
+        if(process.env.NODE_ENV == 'production'){
+            res.status(500).render('erros/500');
+            return;
+        }
+        next(err);
+    });
+
+       return app;
 }

@@ -15,18 +15,30 @@ ou
 ## Modulos instalados:
 - Modulo do express para validação:
 
-``` 
+
 **Modulo de validação**
+``` 
 - npm install express-validator --save
+```
+```  
 **Modulo para teste de integração**
 - npm install mocha --save-dev
 - npm install supertest --save-dev
+``` 
+``` 
 **Modulo do Socket.io**
 - npm install socket.io --save
 ```
 
 ## teste
+**Subir ambiente de teste/producao**
+```
+NODE_ENV=test nodemon app.js
 
+ou
+
+producao = NODE_ENV=production nodemon app.js
+```
 **Teste em Prod**
 ```
 node_modules/mocha/bin/mocha

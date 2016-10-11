@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
 function createDbConnection(){
-    if(!process.env.NODE_ENV){
+    if(process.env.NODE_ENV == 'production'){
         return mysql.createConnection({
             host : 'localhost',
             user : 'root',
